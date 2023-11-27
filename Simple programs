@@ -71,3 +71,43 @@ void main()
     printf("Grade A");
 }
 
+#Code 6
+//Commercial calculator
+#include<stdio.h>
+void main()
+{
+    float a,b,res;
+    char op;
+    printf("Enter the operands");
+    scanf("%f %f",&a,&b);
+    printf("Enter the operator");
+    scanf("%s",&op);
+    switch(op)
+    {
+        case '+':res=a+b;
+                 printf("Result is %f",res);
+                 break;
+        case '-':res=a-b;
+                 printf("Result is %f",res);
+                 break;
+        case '*':res=a*b;
+                 printf("Result is %f",res);
+                 break;
+        case '/':if(b!=0)
+                 {
+                 res=a/b;
+                 printf("Result is %f",res);
+                 }
+                 else
+                 {
+                 printf("Divided by zero error");
+                 }
+                 break;
+        default:printf("Invalid error");
+  }
+}
+
+
+
+
+
