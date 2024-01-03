@@ -1,3 +1,4 @@
+//C program to print frequency histogram
 #include <stdio.h>
 int n,frr[20],arr[20],visited=-1;
 void getdata();
